@@ -24,7 +24,7 @@ function App() {
         }
 
         try {
-            const res = await fetch('https://apitest-2-pu1h.onrender.com', {
+            const res = await fetch('https://apitest-2-puh1.onrender.com/bfhl', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(jsonData),
