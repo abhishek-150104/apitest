@@ -18,10 +18,14 @@ function App() {
         let jsonData;
         try {
             jsonData = JSON.parse(input);
+            if (!jsonData.data || !Array.isArray(jsonData.data)) {
+                throw new Error('JSON must have a "data" array.');
+            }
         } catch {
-            setError('Invalid JSON input');
+            setError('Invalid JSON format. Make sure it contains a "data" array.');
             return;
         }
+
 
         try {
             const res = await fetch('https://apitest-2-puh1.onrender.com/bfhl', {
