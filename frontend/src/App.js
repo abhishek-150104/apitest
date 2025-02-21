@@ -24,7 +24,7 @@ function App() {
         }
 
         try {
-            const res = await fetch('https://apitest-uyvf.vercel.app/', {
+            const res = await fetch('https://apitest-2-pu1h.onrender.com', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(jsonData),
